@@ -12,7 +12,7 @@
 <body>
   <div class="container text-align-center">
     <header class="row justify-between text-align-center white-text page-header">
-      <h1 class="col-4">Ola Sh2</h1>
+      <h2 class="col-4"><span id="clock"></span></h2>
       <nav class="col-6 row justify-evenly">
         <a href="#about" class="white-text nav-item">About</a>
         <a href="#tech" class="white-text nav-item">Technologies</a>
@@ -57,6 +57,18 @@
       <p class="col-12">Find more on my work on <a href="https://github.com/SnowWhiteDad" class="nav-item blue-text">GitHub</a></p>
     </div>
   </div>
-</body>
+  </body>
 
 </html>
+
+</body>
+
+</html><script type="text/javascript">
+  var clockElement = document.getElementById('clock');
+
+  function clock() {
+    clockElement.textContent = new Date().toString();
+  }
+
+  setInterval(clock, 1000);
+  </script>
